@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About My Pet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">My Pet 🐶</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="home">Home</a>
+      <a href="about">About</a>
+      <a href="photos">Photos</a>
+      <a href="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main-grid">
+    <section class="content">
+      <h2>Meet My Pet</h2>
+      <p>My pet's name is Bruno, a playful Golden Retriever who loves running in the park, chewing on toys, and getting belly rubs.</p>
+      <p>He’s been a part of our family for 3 years and brings joy to everyone he meets. His favorite food is chicken and rice, and he knows several tricks like sit, paw, and roll over!</p>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Fun Facts</h3>
+      <ul>
+        <li>🐾 Loves chasing butterflies</li>
+        <li>🎾 Owns 12 tennis balls</li>
+        <li>🛁 Hates bath time</li>
+        <li>🦴 Buries bones in the garden</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">© 2025 Bruno's Adventures</footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
